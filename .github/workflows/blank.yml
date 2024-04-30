@@ -41,7 +41,7 @@ jobs:
         uses: actions/checkout@v2
   
       - name: Build Docker image
-        run: docker build -t MiniCalculatorInterpreter-master/dockerfile  .
+        run: docker build -t dockerfile  .
   
       - name: Run Docker container
-        run: docker run -d -p 8080:80 MiniCalculatorInterpreter-master/dockerfile
+        run: docker run -d -p 8080:80 dockerfile

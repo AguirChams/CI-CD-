@@ -4,6 +4,6 @@ WORKDIR /app
 COPY MiniCalculatorInterpreter-master/requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/
-RUN python -m unittest test.py
+RUN python -m unittest MiniCalculatorInterpreter-master/test.py
 CMD ["python", "calculator.py"]
 EXPOSE 8000

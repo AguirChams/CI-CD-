@@ -1,5 +1,5 @@
 import unittest
-from my_math_functions import addition, soustraction, multiplication, division
+from calculator import addition, soustraction, multiplication, division
 
 class TestMathFunctions(unittest.TestCase):
 

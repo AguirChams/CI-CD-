@@ -41,5 +41,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Deploy to production
         run: |
-          docker build -t dockerfile .
-          docker run -d -p 8000:8000 dockerfile
+          docker build -t MiniCalculatorInterpreter-master/dockerfile .
+          docker run -d -p 8000:8000 MiniCalculatorInterpreter-master/dockerfile

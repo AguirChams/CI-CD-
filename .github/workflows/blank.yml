@@ -1,0 +1,33 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Build application
+        run: |
+          # Commandes pour compiler ou interpréter le code de votre application
+          pip install .
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          # Commandes pour installer les dépendances nécessaires aux tests
+          pip install -r requirements.txt
+      - name: Run automated tests
+        run: |
+          # Commandes pour exécuter des tests automatisés
+          pytest

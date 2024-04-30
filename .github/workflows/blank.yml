@@ -27,6 +27,7 @@ jobs:
         run: |
           # Commandes pour installer les dépendances nécessaires aux tests
           pip install -r MiniCalculatorInterpreter-master/requirements.txt
+          pip install pytest
       - name: Run automated tests
         run: |
           # Commandes pour exécuter des tests automatisés

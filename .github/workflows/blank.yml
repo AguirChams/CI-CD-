@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           # Commandes pour installer les dépendances nécessaires aux tests
-          pip install -r requirements.txt
+          pip install -r MiniCalculatorInterpreter-master/requirements.txt
       - name: Run automated tests
         run: |
           # Commandes pour exécuter des tests automatisés

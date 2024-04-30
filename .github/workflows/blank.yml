@@ -31,5 +31,5 @@ jobs:
       - name: Run automated tests
         run: |
           # Commandes pour exécuter des tests automatisés
-          pytest test.py
+          pytest MiniCalculatorInterpreter-master/test.py
 

@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+MiniCalculatorInterpreter_master.egg-info/PKG-INFO
+MiniCalculatorInterpreter_master.egg-info/SOURCES.txt
+MiniCalculatorInterpreter_master.egg-info/dependency_links.txt
+MiniCalculatorInterpreter_master.egg-info/top_level.txt

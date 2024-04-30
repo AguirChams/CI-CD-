@@ -9,21 +9,18 @@ Usage
 To use the CI/CD pipeline, follow these steps:
 
 Clone the Repository: Clone this repository to your local machine.
-bash
-Copy code
+
 git clone https://github.com/your-username/MiniCalculatorInterpreter.git
 Install Dependencies: Install the necessary dependencies for the project. Make sure you have Python and Docker installed on your machine.
 Run Tests: Run the automated tests using the following command:
-bash
-Copy code
+
 python -m unittest MiniCalculatorInterpreter-master/test.py
 Build Docker Image: Build the Docker image for the application using the provided Dockerfile.
-bash
-Copy code
+
 docker build -t calculator-app .
 Run Docker Container: Run the Docker container to deploy the application locally.
-bash
-Copy code
+
+
 docker run -d -p 8080:80 calculator-app
 Access the Application: Access the application by navigating to http://localhost:8080 in your web browser.
 Continuous Integration (CI)
